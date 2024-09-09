@@ -1,0 +1,5 @@
+CREATE TABLE responses (
+    id SERIAL PRIMARY KEY,
+    phone_number VARCHAR(15),
+    answer TEXT
+);
