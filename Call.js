@@ -35,7 +35,7 @@ app.post('/call', async (req, res) => {
 
   try {
     const call = await twilioClient.calls.create({
-      url: 'http://localhost:3000/question', // Twilio will request this URL for call instructions
+      url: 'http://54.208.14.108:3000/question', // Twilio will request this URL for call instructions
       to: `+91${phoneNumber}`, // Indian phone number
       from: process.env.TWILIO_PHONE_NUMBER // Your Twilio number
     });
